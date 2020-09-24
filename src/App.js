@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import "./styles.css"
 
 function App() {
+
+  let [value, setValue] = useState(0);
+
+  const restar = () => {
+    if (value > 0)
+    setValue(--value)
+  }
+
+  const sumar = () => {
+    setValue(++value)
+  }
+
+  const resetear = () => {
+    setValue(0)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Votaciones Partido Creo</h1>
+      <img src="https://pbs.twimg.com/media/A7I_mNsCIAAYO5h.jpg"  className="image" alt="Lasso-creo"/>
+      <div className="wrapper">
+        
+        <button onClick={restar}>-</button>
+        <div>{value}</div>
+        <button onClick={sumar}>+</button>
+      </div>
+      <button className="reset" onClick={resetear}>Reiniciar</button>
     </div>
+   
   );
 }
 
