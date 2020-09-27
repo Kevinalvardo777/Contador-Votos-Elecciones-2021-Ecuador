@@ -1,36 +1,23 @@
-import React, {useState} from 'react';
-import "./styles.css"
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Login from './components/auth/Login'
+import NuevaCuenta from './components/auth/NuevaCuenta'
+import Acta from './components/votaciones/Acta'
+import Presidentes from './components/votaciones/Presidentes'
+import 'semantic-ui-css/semantic.min.css'
+
 
 function App() {
-
-  let [value, setValue] = useState(0);
-
-  const restar = () => {
-    if (value > 0)
-    setValue(--value)
-  }
-
-  const sumar = () => {
-    setValue(++value)
-  }
-
-  const resetear = () => {
-    setValue(0)
-  }
-
   return (
-    <div className="App">
-      <h1>Votaciones Partido Creo</h1>
-      <img src="https://pbs.twimg.com/media/A7I_mNsCIAAYO5h.jpg"  className="image" alt="Lasso-creo"/>
-      <div className="wrapper">
-        
-        <button onClick={restar}>-</button>
-        <div>{value}</div>
-        <button onClick={sumar}>+</button>
-      </div>
-      <button className="reset" onClick={resetear}>Reiniciar</button>
-    </div>
-   
+    <Router>
+      <Switch>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/nueva-cuenta" component={NuevaCuenta} />
+          <Route exact path="/actas" component={Acta} />
+          <Route exact path="/presidentes" component={Presidentes} /> 
+      </Switch>
+    </Router>
+    
   );
 }
 
