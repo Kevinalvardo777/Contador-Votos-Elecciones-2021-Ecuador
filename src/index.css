@@ -67,6 +67,7 @@ a {
 .btn-primario {
   background-color: #154360 ;
   color: var(--blanco);
+  border-radius: 500px;
 }
 
 .btn-primario:hover {
@@ -211,6 +212,7 @@ aside  {
   -webkit-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
   -moz-box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
   box-shadow: 0px 6px 11px -8px rgba(0,0,0,0.9);
+  
 }
 .tarea .acciones .btn:first-of-type {
   margin-right: 1rem;
@@ -286,7 +288,7 @@ aside  {
 }
 
 .form-usuario {
-    background-color: #F8F9F9;
+    background-color: #EAEDED ;
     height: 100vh;
     min-height: 800px;
     display: flex;
@@ -311,7 +313,7 @@ aside  {
   margin: 0;
 }
 .campo-form label {
-  flex: 0 0 100px;
+  flex: 0 0 110px;
   font-family: var(--textFont);
 }
 .campo-form input[type="password"],
@@ -331,5 +333,27 @@ aside  {
 .enlace-cuenta {
   margin-top: 2rem;
   display: block;
+  font-size: 2rem;
+  font-weight: bold;
   opacity: .7;
+  align-items: center;
+}
+
+.listaProp{
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+  height: 80px;
+  display: block;
+  opacity: .7;
+  background-color: white;
+  border-radius: 1000px;
+  color: black;
+  border: 2px solid  darkblue; /* Green */
+}
+
+li{
+  margin-bottom: 50px;
+  padding: .5rem;
 }

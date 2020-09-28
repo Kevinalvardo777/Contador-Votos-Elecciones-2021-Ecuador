@@ -3,11 +3,29 @@ import {Link} from 'react-router-dom';
 
 const Acta = () => {
     return ( 
-        <div>
-            <h1>Actas</h1>
-            <Link to={"/presidentes"} className="enlace-cuenta">
-                Presidentes
-            </Link>
+        <div className="container">
+            <div className="jumbotron">
+                <h1 htmlFor="votaciones" className="text-center">Actas</h1>
+            
+            </div>
+            <div className="row">
+                <div className="col-6 mx-auto">
+                    <div className="listaProp">
+                            <Link to={"/presidentes"} className="enlace-cuenta">
+                                Presidentes
+                            </Link>
+                    </div>
+                </div>
+           </div>
+           <div className="row">
+                <div className="col-6 mx-auto">
+                    <div className="listaProp">
+                            <Link to={"/presidentes"} className="enlace-cuenta">
+                                Asambleistas
+                            </Link>
+                    </div>
+                </div>
+           </div>
         </div>
      );
 }

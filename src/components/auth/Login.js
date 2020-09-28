@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import { GoMail } from "react-icons/go";
+import { FcUnlock, FcAddressBook } from 'react-icons/fc'
+
 
 const Login = () => {
 
@@ -32,24 +35,25 @@ const Login = () => {
         
         <div className="form-usuario">
            
-            <div className="contenedor-form sobra-dark">
+            <div className="contenedor-form sombra-dark">
                 <h1 >Iniciar Sesión</h1>
                 <form 
                     onSubmit={onSubmit}
                 >
                     <div className="campo-form">
-                        <label htmlFor="email">Correo</label>
+                        <label htmlFor="email"> <FcAddressBook /> Correo</label>
                         <input 
+                            icon="user"
                             type="email"
                             id="email"
                             name="email"
                             placeholder="Ingrese Email"
                             value={email}
                             onChange={onChange}
-                        />
+                        ></input>
                     </div>
                     <div className="campo-form">
-                        <label htmlFor="password">Contraseña</label>
+                        <label htmlFor="password"><FcUnlock /> Contraseña</label>
                         <input 
                             type="password"
                             id="password"
@@ -57,7 +61,7 @@ const Login = () => {
                             placeholder="Ingrese Contraseña"
                             value={password}
                             onChange={onChange}
-                        />
+                        ></input>
                     </div>
                     <div className="campo-form">
                         <input 
@@ -66,7 +70,7 @@ const Login = () => {
                             value="Iniciar Sesión"
                         />
                     </div>
-                    <Link to={"/nueva-cuenta"} className="enlace-cuenta">
+                    <Link to={"/nueva-cuenta"}  className="enlace-cuenta">
                         Obtener Cuenta
                     </Link>
                 </form>
