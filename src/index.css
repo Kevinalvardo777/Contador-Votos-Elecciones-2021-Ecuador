@@ -330,14 +330,30 @@ aside  {
   margin-right: 20%;
 }
 
-.enlace-cuenta {
+.enlace-cuenta, .enlace-cuenta-acta {
   margin-top: 2rem;
   display: block;
   font-size: 2rem;
   font-weight: bold;
   opacity: .7;
   align-items: center;
+  
 }
+
+.enlace-cuenta:hover {
+  color: inherit;
+  text-decoration: none;
+  
+  
+}
+
+.enlace-cuenta-acta:hover {
+  color: inherit;
+  text-decoration: none;
+  transform: scale(1.5);
+}
+
+
 
 .listaProp{
   margin-top: 4rem;
