@@ -4,9 +4,8 @@ import {Link} from 'react-router-dom';
 const Acta = () => {
     return ( 
         <div className="container">
-            <div className="jumbotron">
+            <div className="headerActa">
                 <h1 htmlFor="votaciones" className="text-center" >Actas</h1>
-            
             </div>
             <div className="row">
                 <div className="col-6 mx-auto">
@@ -20,8 +19,26 @@ const Acta = () => {
            <div className="row">
                 <div className="col-6 mx-auto">
                     <div className="listaProp">
-                            <Link to={"/presidentes"} className="enlace-cuenta-acta">
+                            <Link to={"/asambleistas"} className="enlace-cuenta-acta">
                                 Asambleistas
+                            </Link>
+                    </div>
+                </div>
+           </div>
+           <div className="row">
+                <div className="col-6 mx-auto">
+                    <div className="listaProp">
+                            <Link to={"/presidentes"} className="enlace-cuenta-acta">
+                                Alcaldes
+                            </Link>
+                    </div>
+                </div>
+           </div>
+           <div className="row">
+                <div className="col-6 mx-auto">
+                    <div className="listaProp">
+                            <Link to={"/presidentes"} className="enlace-cuenta-acta">
+                                Prefectos
                             </Link>
                     </div>
                 </div>

@@ -1,7 +1,19 @@
 import React, {useState} from 'react';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { FcUnlock, FcAddressBook } from 'react-icons/fc'
 
 const NuevaCuenta = () => {
+
+    // syled component para logo
+    const Imagen = styled.img`
+        width: 20rem;
+        height: 12rem;
+        margin-left: 12rem;
+        margin-bottom: 5rem;
+        border-radius: 10px;
+        border: none;
+    `;
 
     // State para iniciar sesion
     const [usuario, guardarUsuario] = useState({
@@ -37,7 +49,10 @@ const NuevaCuenta = () => {
     return ( 
         <div className="form-usuario">
             <div className="contenedor-form sobra-dark">
-            <h1>Obtener Cuenta</h1>
+                <h1>Obtener Cuenta</h1>
+                <Imagen src="https://i1.wp.com/cedatos.com.ec/wp-content/uploads/2020/02/eleccionesecuador-692x360-1-1.jpg?fit=692%2C360&ssl=1"
+                alt={'logo votaciones 2021'}/>
+
             <form
                 onSubmit={onSubmit}
             >
@@ -53,7 +68,7 @@ const NuevaCuenta = () => {
                     />
                 </div>
                 <div className="campo-form">
-                    <label htmlFor="email">Correo</label>
+                    <label htmlFor="email"><FcAddressBook /> Correo</label>
                     <input 
                         type="text"
                         id="email"
@@ -64,7 +79,7 @@ const NuevaCuenta = () => {
                     />
                 </div>
                 <div className="campo-form">
-                    <label htmlFor="password">Contraseña</label>
+                    <label htmlFor="password"><FcUnlock /> Contraseña</label>
                     <input 
                         type="password"
                         id="password"
@@ -75,7 +90,7 @@ const NuevaCuenta = () => {
                     />
                 </div>
                 <div className="campo-form">
-                    <label htmlFor="confirmar">Confirmar Contraseña</label>
+                    <label htmlFor="confirmar"><FcUnlock /> Confirmar Contraseña</label>
                     <input 
                         type="password"
                         id="confirmar"
