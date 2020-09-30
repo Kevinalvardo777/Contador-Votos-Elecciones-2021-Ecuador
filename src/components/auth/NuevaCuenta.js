@@ -9,8 +9,10 @@ const NuevaCuenta = () => {
     const Imagen = styled.img`
         width: 20rem;
         height: 12rem;
-        margin-left: 12rem;
-        margin-bottom: 5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7%;
         border-radius: 10px;
         border: none;
     `;

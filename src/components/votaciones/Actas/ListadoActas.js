@@ -6,7 +6,6 @@ const ListadoActas = () => {
         <div className="col-12 p-2 row">
             <h1>Tipos de Actas</h1>
             {actas.map(acta => (
-                
                 <Acta />
             ) )}
 
