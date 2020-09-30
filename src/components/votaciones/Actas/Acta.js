@@ -5,7 +5,7 @@ const Acta = () => {
     return ( 
         <div className="container">
             <div className="headerActa">
-                <h1 htmlFor="votaciones" className="text-center" >Actas</h1>
+                <h1 htmlFor="votaciones" className="text-center" style={{color: "#9C9F9F "}}>Actas</h1>
             </div>
             <div className="row">
                 <div className="col-6 mx-auto">

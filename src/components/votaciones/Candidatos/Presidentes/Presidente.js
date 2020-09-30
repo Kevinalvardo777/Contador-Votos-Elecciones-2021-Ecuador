@@ -2,15 +2,15 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 
   const Imagen = styled.img`
-    width: 13rem;
-    height: 13rem;
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 7%;
     border-radius: 10px;
     border: none;
 
       &:hover {
-        height: 18rem;
-        width: 18rem;
+        height: 15rem;
+        width: 15rem;
         margin-top: auto;
         margin-bottom: 7%;
       }
@@ -36,7 +36,7 @@ function Presidente({presidente}) {
                         href=""
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-info btn-block"
+                        className="btn btn-primary btn-block"
                     >Votar</a>
                   </div>
 

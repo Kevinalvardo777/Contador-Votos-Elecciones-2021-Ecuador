@@ -17,8 +17,6 @@ const Login = () => {
         margin-bottom: 7%;
         border-radius: 10px;
         border: none;
-
-
     `;
 
     const [usuario, guardarUsuario] = useState({

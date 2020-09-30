@@ -26,7 +26,7 @@ const PaginaAsambleista = () => {
         <div className="container">
         
             <div className="headerActa">
-                <h1 htmlFor="votaciones" style={{fontSize: "3rem"}} className="text-center">Candidatos a la Asamblea Nacional</h1>
+                <h1 htmlFor="votaciones" style={{fontSize: "3rem", color: "#9C9F9F"}} className="text-center">Candidatos a la Asamblea Nacional</h1>
                 <Buscador />
                 <br/>
             </div>

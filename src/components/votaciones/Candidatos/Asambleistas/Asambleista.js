@@ -2,15 +2,15 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 
     const Imagen = styled.img`
-        width: 15rem;
-        height: 14rem;
+        width: 11rem;
+        height: 10rem;
         margin-bottom: 7%;
         border-radius: 10px;
         border: none;
 
         &:hover {
-            height: 18rem;
-            width: 19rem;
+            height: 14rem;
+            width: 15rem;
             margin-top: auto;
             margin-bottom: 7%;
         }
@@ -37,7 +37,7 @@ function Asambleista({asambleista}) {
                         href=""
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-info btn-block"
+                        className="btn btn-primary btn-block"
                     >Votar</a>
                   </div>
 

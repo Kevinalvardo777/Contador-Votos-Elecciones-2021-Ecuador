@@ -17,7 +17,7 @@ const Buscador = () => {
                 <div className="form-group col-md-4">
                     <input 
                         type="submit"
-                        className="btn-lg btn-info btn-block"
+                        className="btn-lg btn-primary btn-block"
                         value="Buscar"
                     />
                 </div>

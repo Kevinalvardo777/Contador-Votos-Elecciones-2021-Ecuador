@@ -1,6 +1,21 @@
 import React, {useState, useEffect} from 'react';
 import ListadoPresidentes from './ListadoPresidentes';
 import Buscador from './../../../pageComponents/Buscador'
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://material-ui.com/">
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const PaginaPresidente = () => {
 
@@ -26,7 +41,7 @@ const PaginaPresidente = () => {
         <div className="container">
         
             <div className="headerActa">
-                <h1 htmlFor="votaciones" style={{fontSize: "3rem"}} className="text-center">Candidatos a la presidencia</h1>
+                <h1 htmlFor="votaciones" style={{fontSize: "3rem", color: "#9C9F9F"}} className="text-center">Candidatos a la presidencia</h1>
                 <Buscador />
                 <br/>
             </div>
