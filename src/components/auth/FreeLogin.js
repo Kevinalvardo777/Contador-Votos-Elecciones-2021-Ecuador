@@ -13,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles';
-import mugen from './../../assets/images/logomugen.jpeg'
+import mugen from './../../assets/images/mugen.png'
 
 function Copyright() {
   return (
@@ -29,7 +29,7 @@ function Copyright() {
 }
 
 const Imagen = styled.img`
-  width: 20rem;
+  width: 25rem;
   height: 15rem;
   display: block;
   margin-left: auto;
@@ -80,7 +80,7 @@ export default function SignInSide() {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <Imagen src={mugen} />
-          <h2 style={{fontFamily: "Brush Script MT", color: '#483D8B', fontWeight: 'bold'}}>Se parte de la innovacion politica</h2>
+          
           <form className={classes.form} noValidate>
             <TextField
               style={{fontSize: '5rem'}}
