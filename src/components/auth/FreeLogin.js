@@ -2,10 +2,10 @@ import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import {Link} from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
@@ -13,6 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles';
+import mugen from './../../assets/images/logomugen.jpeg'
 
 function Copyright() {
   return (
@@ -28,12 +29,12 @@ function Copyright() {
 }
 
 const Imagen = styled.img`
-  width: 8rem;
-  height: 8rem;
+  width: 20rem;
+  height: 15rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 7%;
+  margin-bottom: 0%;
   border-radius: 10px;
   border: none;
 `;
@@ -78,10 +79,8 @@ export default function SignInSide() {
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <Imagen src="https://www.iconfinder.com/data/icons/vote-elections/154/vote-election-choice-app-ok-accept-512.png" />
-          <Typography component="h1" variant="h5">
-            Voting App
-          </Typography>
+          <Imagen src={mugen} />
+          <h2 style={{fontFamily: "Brush Script MT", color: '#483D8B', fontWeight: 'bold'}}>Se parte de la innovacion politica</h2>
           <form className={classes.form} noValidate>
             <TextField
               style={{fontSize: '5rem'}}
@@ -122,18 +121,18 @@ export default function SignInSide() {
             <Grid container>
               <Grid item xs>
                 <div className="col">
-                  <Link href="#" variant="body2">
+                  <Link to="#" variant="body2">
                     Olvidaste la contraseñaa?
                   </Link>
                 </div>
                 <div className="col">
-                  <Link href={'actas'} variant="body2">
+                  <Link to={'actas'} variant="body2">
                     Ir a actas temporalmente
                   </Link>
                 </div>
               </Grid>
               <Grid item>
-                <Link href={"/nueva-cuenta"}  variant="body2">
+                <Link to={"/nueva-cuenta"}  variant="body2">
                   {"No tienes cuenta? Regístrate"}
                 </Link>
               </Grid>
